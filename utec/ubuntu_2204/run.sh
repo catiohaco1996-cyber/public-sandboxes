@@ -11,8 +11,8 @@ fi
 echo $HOSTNAME > /etc/hostname
 echo "127.0.0.1 $HOSTNAME" >> /etc/hosts
 
-# Reforce password
-echo root:`echo $HOSTNAME | cut -d '-' -f 1` | chpasswd
+# Set password
+echo root:`echo utec2026` | chpasswd
 
 # Restart ssh
 service ssh restart >/dev/null 2>&1
