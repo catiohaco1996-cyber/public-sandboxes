@@ -3,5 +3,12 @@
 
 
 def islower(c):
-    """Devuelve True si c es una letra minúscula, False en caso contrario."""
-    return 97 <= ord(c) <= 122
+    """Verifica si un carácter es una letra minúscula usando valores ASCII.
+
+    Args:
+        c (str): El carácter a evaluar.
+
+    Returns:
+        bool: True si es minúscula, False en caso contrario.
+    """
+    return ord('a') <= ord(c) <= ord('z')
