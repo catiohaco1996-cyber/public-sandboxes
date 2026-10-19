@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Módulo para realizar operaciones matemáticas básicas usando una calculadora externa."""
+"""Módulo para realizar operaciones matemáticas básicas.
+
+Usa una calculadora externa.
+"""
 from calculator_1 import add, sub, mul, div
 
 if __name__ == "__main__":
