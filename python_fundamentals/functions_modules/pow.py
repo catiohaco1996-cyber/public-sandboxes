@@ -6,16 +6,22 @@ def pow(a, b):
     """Calcula el valor de a elevado a la potencia de b usando un bucle.
 
     Args:
-        a (int): La base.
+        a (int o float): La base.
         b (int): El exponente.
 
     Returns:
-        int: El resultado de a^b.
+        int o float: El resultado de a^b.
     """
     if b == 0:
         return 1
-    
+
     result = 1
-    for _ in range(b):
+    exponent = abs(b)
+
+    for _ in range(exponent):
         result *= a
+
+    if b < 0:
+        return 1 / result
+
     return result
