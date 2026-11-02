@@ -28,4 +28,7 @@ class Square(Rectangle):
         Returns:
             str: Una descripción formateada del cuadrado.
         """
-        return "[Square] {}/{}".format(self.width, self.height)
+        return "[Square] {}/{}".format(
+            self._Rectangle__width,
+            self._Rectangle__height
+        )
