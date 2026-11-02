@@ -122,4 +122,3 @@ class Square:
                 string_repr += "\n"
 
         return string_repr
-
