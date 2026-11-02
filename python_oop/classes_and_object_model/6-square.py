@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Este módulo define la clase Square con propiedades, área, posición e impresión.
+Este módulo define la clase Square con propiedades, área e impresión.
 """
 
 
@@ -14,8 +14,8 @@ class Square:
         Inicializa una nueva instancia de Square.
 
         Args:
-            size (int): El tamaño del lado del cuadrado. Por defecto es 0.
-            position (tuple): La posición (x, y) del cuadrado. 
+            size (int): El tamaño del lado del cuadrado.
+            position (tuple): Posición (x, y) del cuadrado.
         """
         self.size = size
         self.position = position
@@ -71,8 +71,8 @@ class Square:
         """
         if (not isinstance(value, tuple) or
                 len(value) != 2 or
-                not isinstance(value[0], int) or
-                not isinstance(value[1], int) or
+                not isinstance(value, int) or
+                not isinstance(value, int) or
                 value[0] < 0 or
                 value[1] < 0):
             raise TypeError("position must be a tuple of 2 positive integers")
@@ -105,7 +105,6 @@ class Square:
     def __str__(self):
         """
         Define la representación en cadena de la instancia Square.
-        Debe comportarse exactamente igual que my_print().
 
         Returns:
             str: El cuadrado formateado como cadena de texto.
@@ -123,3 +122,4 @@ class Square:
                 string_repr += "\n"
 
         return string_repr
+
