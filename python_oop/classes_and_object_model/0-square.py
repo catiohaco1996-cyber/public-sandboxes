@@ -9,4 +9,3 @@ class Square:
     Representa un cuadrado vacío.
     """
     pass
-
